@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    
+    display: grid;
+    grid-template: 150px 1fr / 200px 1fr;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    color: white;
+    background-color: rgb(0, 130, 200);
+
+    padding: 15px;
+}
+
+.sidebar-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.sidebar-row {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar-title {
+    font-size: 35px
+}
+
+.menu-item {
+    font-size: 20px
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.header {
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+
+    box-shadow: 2px 2px 5px black;
+}
+
+.header-one {
+    display: grid; 
+    grid-template-columns: 30px 9fr 30px 50px 1fr;
+}
+
+.header-two {
+    display: grid;
+    grid-template-columns: 50px 1fr 200px;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+    background-color: rgb(0, 130, 200);
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 20px;
+    border: none;
+}
+
+.greeting {
+    display: grid; 
+    grid-template-rows: 1fr 2fr;
+}
+
+.greeting-top {
+    font-size: 15px;
+}
+
+.greeting-bottom {
+    font-size: 30px;
+}
+
+.main-content {
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template: 1fr 1fr / 5fr 1fr;
+
+    background-color: rgb(172, 172, 172);
+}
+
+.section-title {
+    font-size: 20px
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    padding: 20px 15px;
+
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    border-left: 5px solid rgb(255, 196, 0);
+
+    display: grid;
+    grid-template-rows: 30px 1fr 30px;
+}
+
+.project-title {
+    font-size: 18px;
+}
+
+.project-content {
+    font-size: 15px;
+}
+
+.project-actions {
+    align-self: right;
+
+    display: flex;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-content {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+
+    background-color: white;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-content {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+
+    background-color: white;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+
+

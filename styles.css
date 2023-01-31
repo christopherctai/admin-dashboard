@@ -16,15 +16,21 @@ body {
     grid-template: 150px 1fr / 275px 1fr;
 }
 
+.clickable:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .sidebar {
     grid-row: 1 / 3;
+    z-index: 1; 
 
     display: flex;
     flex-direction: column;
     gap: 60px;
 
     color: white;
-    background-color: rgb(0, 130, 200);
+    background-color: #059669;
 
     padding: 15px;
 }
@@ -32,6 +38,8 @@ body {
 .sidebar-top {
     display: flex;
     gap: 20px;
+    justify-content: left;
+    align-items: center;
 }
 .sidebar-content {
     display: grid;
@@ -42,37 +50,41 @@ body {
 .sidebar-row {
     display: grid;
     grid-template-columns: 30px 1fr;
+    align-items: center;
     gap: 10px;
 }
 
 .logo-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(160deg) brightness(107%) contrast(106%);
 }
 
+
 .sidebar-title {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
 }
 
 .menu-item {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .menu-icon {
-    width: 20px;
-    height: 20px;
-    color: white;
+    width: 25px;
+    filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(160deg) brightness(107%) contrast(106%);
 }
 
 .header {
     grid-row: 1 / 2;
+    position: relative;
+    z-index: 0;
 
     display: grid;
     grid-template-rows: 2fr 3fr;
 
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 0 3px 7px 1px black; 
 
     padding: 15px;
 }
@@ -80,13 +92,16 @@ body {
 .header-one {
     display: grid; 
     grid-template-columns: 30px 9fr 30px 50px 1fr;
+    gap: 15px;
+    align-items: center;
 }
 
 input[type="search"] {
     background-color: rgb(211, 211, 211);
     border: none;
     border-radius: 10px;
-    padding: 3px 5px;
+    height: 27px;  
+    padding: 5px 10px;
     
     width: 90%;
 }
@@ -110,7 +125,7 @@ input[type="search"]:focus {
 }
 
 .btn {
-    background-color: rgb(0, 130, 200);
+    background-color: #059669;
     color: white;
     font-weight: 700;
 
@@ -121,11 +136,11 @@ input[type="search"]:focus {
 }
 
 .btn:hover {
-    background-color: rgb(0, 100, 200);
+    background-color: rgb(0, 150, 20);
 }
 
 .btn:active {
-    background-color: rgb(0, 70, 200);
+    background-color: rgb(0, 105, 32);
 }
 
 .greeting {
@@ -135,11 +150,15 @@ input[type="search"]:focus {
 
 .greeting-top {
     font-size: 15px;
+    font-weight: 700;
 }
 
 .greeting-bottom {
     font-size: 30px;
+    font-weight: 700;
 }
+
+.
 
 .main-content {
     grid-row: 2 / 3;
@@ -149,11 +168,12 @@ input[type="search"]:focus {
     gap: 30px;
 
     padding: 30px;
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(209, 209, 209);
 }
 
 .section-title {
-    font-size: 20px
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .projects {
@@ -174,26 +194,31 @@ input[type="search"]:focus {
     padding: 20px 15px;
 
     background-color: white;
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 0 3px 4px black; 
+    
     border-radius: 10px;
-    border-left: 5px solid rgb(255, 196, 0);
+    border-left: 5px solid #eab308;
 
     display: grid;
     grid-template-rows: 30px 1fr 30px;
+    gap: 10px;
 }
 
 .project-title {
     font-size: 18px;
+    font-weight: 700;
 }
 
 .project-content {
     font-size: 15px;
+    color: rgb(100, 100, 100);
 }
 
 .project-actions {
-    align-self: right;
+    justify-self: right;  
 
     display: flex;
+    gap: 10px;
 }
 
 .announcements {
@@ -211,7 +236,16 @@ input[type="search"]:focus {
     padding: 20px;
 
     border-radius: 10px;
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 0 3px 4px black; 
+}
+
+.announcement-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.announcement-info {
+    color: rgb(100, 100, 100);
 }
 
 .trending {

@@ -236,10 +236,17 @@ input[type="search"]:focus {
     gap: 10px;
 }
 
+.action-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .announcements {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    padding:
 }
 
 .announcement-content {
@@ -248,7 +255,7 @@ input[type="search"]:focus {
     gap: 30px;
 
     background-color: white;
-    padding: 20px;
+    padding: 30px;
 
     border-radius: 10px;
     box-shadow: 0 3px 4px black; 
@@ -264,6 +271,7 @@ input[type="search"]:focus {
 }
 
 .trending {
+    align-self: end;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -277,7 +285,7 @@ input[type="search"]:focus {
     gap: 20px;
 
     background-color: white;
-    padding: 20px;
+    padding: 30px;
 
     border-radius: 10px;
     box-shadow: 2px 2px 3px 1px black;
